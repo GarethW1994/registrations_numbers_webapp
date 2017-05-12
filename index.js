@@ -75,18 +75,10 @@ var reg_number = req.params.reg;
 
 		console.log(result);
 			
-		res.redirect('/');
+		//res.redirect('/');
 	});
-});
-
-
-app.get('/reg_numbers/:town', function(req, res) {
-	registrations.find({registration: 'CA 888'}, function(err, data) {
 	
-	if (err) return err;	
-		
-	res.render('home', {data: data});	
-	});
+	
 });
 
 app.post('/reg_numbers', function(req, res, next) {
@@ -95,10 +87,10 @@ app.post('/reg_numbers', function(req, res, next) {
 	
 	if (reg_number !== "") {	
 		res.redirect('/reg_numbers/'+ reg_number);
+		
 	} else {
 		res.redirect('/');
 	}
-	
 });
 
 app.listen(port, function() {

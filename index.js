@@ -23,8 +23,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-//reguire mongoose
-
+//require mongoose
 var mongoose = require('mongoose');
 
 
@@ -48,11 +47,14 @@ registrationSchema.index({registration_number: 1}, {unique: true});
 //Create mongoose model
 var registrations = mongoose.model('registrations', registrationSchema);
 
+////////////////get data////////////////
+var getData = require('./public/javascript/mongo-data');
 
-////////////////external modules////////////////
-//var addData = require('./public/javascript/add_reg_num');
 
-var regNumData = [];
+//global variable for storing current selected town
+var selected_town = "";
+var filteredRegs = [];
+
 
 //Home Route
 app.get('/', function(req, res) {
@@ -62,8 +64,22 @@ registrations.find({}, function(err, data) {
 		
 	res.render('home', {data: data});	
 	});
+	
+	console.log(filter());
 });
 
+ function filter() {
+	registrations.find({}, function(err, data) {
+		if (err) return err;
+		
+		for (var i = 0; i < data.length; i++) {
+			filteredRegs.push(data[i].registration_number);
+		}
+	});
+		
+	
+	return filteredRegs;
+}
 
 app.get('/reg_numbers/:reg', function(req, res){
 var reg_number = req.params.reg;
@@ -75,15 +91,18 @@ var reg_number = req.params.reg;
 
 		console.log(result);
 			
-		//res.redirect('/');
+		res.redirect('/');
 	});
-	
+
 	
 });
 
+//console.log(getData());
+
 app.post('/reg_numbers', function(req, res, next) {
 	var reg_number = req.body.regNum;
-	var selected_town = req.body.town;
+	selected_town = req.body.town;
+
 	
 	if (reg_number !== "") {	
 		res.redirect('/reg_numbers/'+ reg_number);

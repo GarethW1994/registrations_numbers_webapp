@@ -65,8 +65,23 @@ registrations.find({}, function(err, data) {
 });
 
 
-app.get('/reg_numbers', function(req, res){
-	registrations.find({}, function(err, data) {
+app.get('/reg_numbers/:reg', function(req, res){
+var reg_number = req.params.reg;
+	
+		registrations({
+		registration_number: reg_number
+	}).save(function(err, result) {
+		if (err) return err;
+
+		console.log(result);
+			
+		res.redirect('/');
+	});
+});
+
+
+app.get('/reg_numbers/:town', function(req, res) {
+	registrations.find({registration: 'CA 888'}, function(err, data) {
 	
 	if (err) return err;	
 		
@@ -76,16 +91,14 @@ app.get('/reg_numbers', function(req, res){
 
 app.post('/reg_numbers', function(req, res, next) {
 	var reg_number = req.body.regNum;
+	var selected_town = req.body.town;
 	
-	registrations({
-		registration_number: reg_number
-	}).save(function(err, result) {
-		if (err) return err;
-
-		console.log(result);
-	});
+	if (reg_number !== "") {	
+		res.redirect('/reg_numbers/'+ reg_number);
+	} else {
+		res.redirect('/');
+	}
 	
-	res.redirect('/reg_numbers');
 });
 
 app.listen(port, function() {

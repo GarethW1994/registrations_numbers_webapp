@@ -55,17 +55,15 @@ var registrations = mongoose.model('registrations', registrationSchema);
 var selected_town = "";
 var filteredRegs = [];
 
-
 //Home Route
 app.get('/', function(req, res) {
 registrations.find({}, function(err, data) {
 	
 	if (err) return err;	
 		
-	res.render('home', {data: data});	
+	res.render('home', {data: data, amount: data.length});	
 	});
 	
-	//console.log(filter());
 });
 
 
@@ -79,7 +77,8 @@ app.get('/reg_numbers/:reg', function(req, res){
 		if (err) return err;
 
 		console.log(result);
-			
+		
+		//msg = "successfully added registration number";
 		res.redirect('/');
 	});
 });
@@ -95,7 +94,7 @@ app.get('/filter', function(req, res) {
 		if (err) return err;
 		
 		//console.log(data);
-		res.render('home', {data: data});	
+		res.render('home', {data: data, amount: data.length});	
 	});
 	}
 });

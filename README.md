@@ -1,6 +1,5 @@
 <h1>REGISTRATION NUMBERS WEB-APP</h1>
 
-http://registrations-numbers-webapp.herokuapp.com/
 ------------------------------------------
 
 This app allows users to enter any registration that they like. 

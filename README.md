@@ -15,4 +15,16 @@ The user enters a registration number like, <b>CA 123 345</b>, and the registrat
 	<li><b>CA 123 345</b></li>
 </ul>
 
+The user then has an option to filter the registrations by town, such as, Stellenbosch, Paarl, Cape Town etc.
+
+If the user selects a town such as Cape Town to filter the above registrations, the output would be the following:
+
+<ul>
+	<li>CA 345 456</li>
+	<li>CA 123 345</li>
+</ul>
+
+As seen in the list above the <em>filtered list</em> includes registrations from Cape Town only.
+
+Link To App: <a href="">Registrations Web App</a>
 

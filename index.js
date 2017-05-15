@@ -48,7 +48,7 @@ registrationSchema.index({registration_number: 1}, {unique: true});
 var registrations = mongoose.model('registrations', registrationSchema);
 
 ////////////////get data////////////////
-var getData = require('./public/javascript/mongo-data');
+//var getData = require('./public/javascript/mongo-data');
 
 
 //global variable for storing current selected town
@@ -65,26 +65,15 @@ registrations.find({}, function(err, data) {
 	res.render('home', {data: data});	
 	});
 	
-	console.log(filter());
+	//console.log(filter());
 });
 
- function filter() {
-	registrations.find({}, function(err, data) {
-		if (err) return err;
-		
-		for (var i = 0; i < data.length; i++) {
-			filteredRegs.push(data[i].registration_number);
-		}
-	});
-		
-	
-	return filteredRegs;
-}
 
 app.get('/reg_numbers/:reg', function(req, res){
-var reg_number = req.params.reg;
-	
-		registrations({
+	var reg_number = req.params.reg;
+	var town = req.params.city;
+
+	registrations({
 		registration_number: reg_number
 	}).save(function(err, result) {
 		if (err) return err;
@@ -93,20 +82,31 @@ var reg_number = req.params.reg;
 			
 		res.redirect('/');
 	});
-
-	
 });
 
-//console.log(getData());
+app.get('/filter', function(req, res) {
+	var town = req.query.town
+	
+	if (town === 'All') {
+		res.redirect('/');
+	} else {
+		
+	registrations.find({registration_number: {$regex : town}}, function(err, data) {
+		if (err) return err;
+		
+		//console.log(data);
+		res.render('home', {data: data});	
+	});
+	}
+});
+
 
 app.post('/reg_numbers', function(req, res, next) {
 	var reg_number = req.body.regNum;
 	selected_town = req.body.town;
-
 	
 	if (reg_number !== "") {	
-		res.redirect('/reg_numbers/'+ reg_number);
-		
+		res.redirect('/reg_numbers/'+ reg_number);	
 	} else {
 		res.redirect('/');
 	}

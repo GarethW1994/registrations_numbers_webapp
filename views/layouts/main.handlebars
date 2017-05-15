@@ -10,16 +10,33 @@
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  />
 	
 	<!-- Local CSS -->
-	<link rel="stylesheet" href="/public/css/style.css"/>
+	<link rel="stylesheet" href="/public/css/style.css">
 	  
   </head>
 	
   <body>
       <h1>Registration, Numbers!</h1>
 	  {{{body}}}
-  </body>
+	  
+	  <div class="FormTwoContainer">
+
+</div>
+
+<div class="regContainer">
+	<ul>
+		{{#each data}}
+		<li class="regNumbers">{{registration_number}}</li>
+		{{/each}}
+		
+		{{#unless data}}
+			<li class="notFound">Registration Numbers Not Found!</li>
+		{{/unless}}
+	</ul>
+</div>
 
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="//public/javascript/localStorage.js" charset="utf-8"></script>
+  </body>
 </html>

@@ -1,55 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Registrations Numbers Web-App</title>
-	  
+
     <!-- Bootstrap -->
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  />
-	
-	<!-- Local CSS -->
-	<link rel="stylesheet" href="/public/css/style.css">
-	  
-  </head>
-	
-  <body>
- <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="https://github.com/GarethW1994/registrations_numbers_webapp">
-        <img alt="Brand" src="https://en.gravatar.com/userimage/120672088/748bfe4eaea37d884be7593ee9d48271.png?size=200" width="30px" height="30px">
-		</a>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="https://github.com/GarethW1994/registrations_numbers_webapp">
+                <img alt="Brand"
+                     src="https://en.gravatar.com/userimage/120672088/748bfe4eaea37d884be7593ee9d48271.png?size=200"
+                     width="30px" height="30px">
+            </a>
+        </div>
+        <h3>Registration Numbers Web-App</h3>
     </div>
-      	<h3>Registration Numbers Web-App</h3>
-  </div>
 
 </nav>
-	  
-	 <span class="label label-primary">Currently Viewing {{amount}} Registration(s)</span>
-	  <br/>
-	  <br/>
-	  {{{body}}}
-	  
-	  
-<div class="regContainer">
-	<ul>
-		{{#each data}}
-		<li class="regNumbers">{{registration_number}}</li>
-		{{/each}}
-		
-		{{#unless data}}
-      <img src="https://www.embarcadero.com/images/error.png" alt="..." width="100px" height="100px">
-        <h3>Oops! :(</h3>
-        <p>No Registrations Found!</p>
-
-		{{/unless}}
-	</ul>
+<div class="container">
+    <span class="label label-primary">Currently Viewing {{amount}} Registration(s)</span>
 </div>
 
-   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  </body>
+<div class="errorContainer hide">
+    <div class="alert alert-danger" role="alert">Error: <p id="error_report"></p></div>
+</div>
+
+{{{body}}}
+
+
+<h3>List Of Registration Numbers:</h3>
+<div class="regContainer">
+    <ul>
+        {{#each data}}
+            <li class="regNumbers"><span>{{registration_number}}</span></li>
+        {{/each}}
+
+        {{#unless data}}
+            <div class="error">
+                <img src="https://www.embarcadero.com/images/error.png" alt="..." width="100px" height="100px">
+                <h3>Oops! :(</h3>
+                <p>No Registrations Found!</p>
+            </div>
+        {{/unless}}
+    </ul>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
 </html>

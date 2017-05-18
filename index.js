@@ -4,9 +4,14 @@
 var express = require('express');
 var expressHandlebars = require('express-handlebars');
 var assert = require('assert');
+var path = require('path');
+var bodyParser = require('body-parser');
 
 //declare PORT var 3000
 var port = process.env.PORT || 3000;
+
+//require mongoose
+var mongoose = require('mongoose');
 
 //Initialise Instance of express
 var app = express();
@@ -19,12 +24,8 @@ app.engine('handlebars', expressHandlebars({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
 //init body parser
-var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-
-//require mongoose
-var mongoose = require('mongoose');
 
 
 //declare url to mongodb
@@ -112,5 +113,5 @@ app.post('/reg_numbers', function(req, res, next) {
 });
 
 app.listen(port, function() {
-   console.log('server running at localhost//:'+ port + '/'); 
+   console.log('server running at localhost/:'+ port + '/');
 });

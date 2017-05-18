@@ -1,37 +1,45 @@
-<div class="panel panel-primary">
-	<div class="panel-heading">Please Enter Registration Below:</div>
-	<div class="panel-body">
-		<form class="navbar-form navbar-left" role="search" method="post" action="reg_numbers">
-			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Enter Registration Number" name="regNum">
-			<button type="submit" class="btn btn-default" style="margin: 10px 0">Add</button>
-			</div>
-		</form>
-	<br/>
-		
-	</div>
-		
-<div class="panel panel-default">
-	<div class="panel-body">
-		
-			<form class="navbar-form navbar-left" role="search" method="get" action="filter">
-		
-			<input type="radio" name="town" value="CL"><label>Stellenbosch</label>
-			
-			<input type="radio" name="town" value="CA"><label>Cape Town</label>
-			
-			<input type="radio" name="town" value="CY"><label>Bellville</label>
-			
-			<input type="radio" name="town" value="CJ"><label>Paarl</label>
-			
-			<input type="radio" name="town" value="All" checked=true><label>Show All</label>
-			
-			<button type="submit" class="btn btn-primary">Filter</button>
-		
-			</form>
-	</div>
-	</div>
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Please Enter Registration Below:</div>
+        <div class="formContainer">
+            <div class="panel-body">
+                <form class="navbar-form navbar-left" role="search" method="post" action="reg_numbers">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter Registration Number" name="regNum">
+                        <button type="submit" id="add" class="btn btn-default" style="margin: 10px 0">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="panel2 panel-default">
+            <div class="panel-body">
+
+                <form class="navbar-form navbar-left" role="search" method="get" action="filter">
+
+                    <label class="radio-inline">
+                        <input type="radio" name="town" id="inlineRadio1" value="CL"> Stellenbosch
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="town" id="inlineRadio2" value="CA"> Cape Town
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="town" id="inlineRadio3" value="CY"> Bellville
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="town" id="inlineRadio3" value="CJ"> Paarl
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="town" id="inlineRadio3" value="All"> Show All
+                    </label>
+
+                    <button type="submit" class="btn btn-primary">Filter</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 
-
-		

@@ -13,7 +13,7 @@
   ```
 	git clone (url link)
 	```
-#####Setting Up Development Environtment
+###Setting Up Development Environment
 
 - Check if you have node installed on your machine or not, you can check this by using:
 	```

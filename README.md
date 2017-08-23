@@ -1,5 +1,5 @@
 <h1>REGISTRATION NUMBERS WEB-APP</h1>
-------------------------------------------
+
 <h3>Getting Started:</h3>
 <ul>
 	<li>First get this repository on your local machine by forking it.</li>

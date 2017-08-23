@@ -6,8 +6,8 @@
 		<ul>
 			<li>To for this repository click on the fork button in the upper right corner:</li>
 			<li><img src="https://github.com/GarethW1994/registrations_numbers_webapp/public/images/fork-screenshot" width="350"/></li>
+			![alt text](public/images/logo.png "Description goes here")
 		</ul>
 </ul>
 
-![alt text](public/images/logo.png "Description goes here")
 Live Demo: <a href="http://registrations-numbers-webapp.herokuapp.com/">Registrations Web App</a>

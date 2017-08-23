@@ -11,7 +11,7 @@
 ![fork-screenshot](https://user-images.githubusercontent.com/22448019/29610658-33ca45b4-87fb-11e7-8b94-021e343f691d.png)
 
 <ul>
-	<li>Then clone the repo from your forked account to your local machine using <pre>git clone</pre></li>
+	<li>Then clone the forked repo from your github account to your local machine using <pre>git clone <url></pre></li>
 </ul>
 
 

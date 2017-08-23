@@ -9,5 +9,5 @@
 		</ul>
 </ul>
 
-![alt text](public/logo.png "Description goes here")
+![alt text](public/images/logo.png "Description goes here")
 Live Demo: <a href="http://registrations-numbers-webapp.herokuapp.com/">Registrations Web App</a>

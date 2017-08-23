@@ -20,7 +20,7 @@
   ```
   git clone (url link)
 
-- Check if you have node installed on your machine or not, you can check this by using
+- Check if you have node installed on your machine or not, you can check this by using (##Note that the following is for Debian and Ubuntu based Linux distributions) :
 
   ```
   node -v

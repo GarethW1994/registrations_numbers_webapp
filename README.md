@@ -12,11 +12,13 @@
 
 <ul>
 	<li>Then clone the forked repo from your github account to your local machine.</li>
-	<li>Go to the clone or download button in on the forked repo</li>
-	<!-- copy the SSH or HTTPS link and in your terminal,   <pre>git clone (url)</pre></li> -->
+	<li>Click on the clone or download button on the forked repo and copy the SSH or HTTPS link to your clipboard.</li>
 </ul>
 
 ![clone-screenshot](https://user-images.githubusercontent.com/22448019/29611898-aa79028c-87ff-11e7-8949-8e5aa70f38fa.png)
 
+<ul>
+	<li>In your terminal navigate to your projects folder and clone the repo using: <pre>git clone (url link)</pre></li>
+</ul>
 
 Live Demo: <a href="http://registrations-numbers-webapp.herokuapp.com/">Registrations Web App</a>

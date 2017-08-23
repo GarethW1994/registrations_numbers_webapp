@@ -1,5 +1,3 @@
-# REGISTRATION NUMBERS WEB-APP
-
 ## Getting Started:
 
 - First get this repository on your local machine by forking it, to fork this repository click on the fork button in the upper right corner:
@@ -26,5 +24,5 @@
 	```
 
  	<p>You at least need <pre>version 4.2.6</pre></p>.
-	
+
   Live Demo: [Registrations Web App](http://registrations-numbers-webapp.herokuapp.com/)

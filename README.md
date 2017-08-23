@@ -7,7 +7,7 @@
 - Then clone the forked repo from your github account to your local machine.
 - Click on the clone or download button on the forked repo and copy the SSH or HTTPS link to your clipboard.
 
-![clone-screenshot](https://user-images.githubusercontent.com/22448019/29611898-aa79028c-87ff-11e7-8949-8e5aa70f38fa.png)
+![clone-screenshot](https://user-images.githubusercontent.com/22448019/29613928-6bc780a0-8808-11e7-9d23-9355a7dbe7eb.png)
 
 - In your terminal navigate to your projects folder and clone the repo using:
   ```

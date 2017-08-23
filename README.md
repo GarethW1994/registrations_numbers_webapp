@@ -20,17 +20,18 @@
 - In your terminal navigate to your projects folder and clone the repo using:
 
   ```
-  git clone (url link)```
+  git clone (url link)
 
 - Check if you have node installed on your machine or not, you can check this by using
 
   ```
-  node -v```
+  node -v
 
 - This should return a version if so, well done you have node installed on your machine ! If this fails you can install node by running the following command in the terminal
 
   ```
   curl -sL <https://deb.nodesource.com/setup_8.x> | sudo -E bash -
-  sudo apt-get install -y nodejs```
+  sudo apt-get install -y nodejs
 
+	```
 Live Demo: [Registrations Web App](http://registrations-numbers-webapp.herokuapp.com/)

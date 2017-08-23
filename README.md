@@ -25,4 +25,6 @@
   sudo apt-get install -y nodejs
 	```
 
+- You at least need 
+	version 4.2.6.
   Live Demo: [Registrations Web App](http://registrations-numbers-webapp.herokuapp.com/)

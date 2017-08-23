@@ -13,7 +13,7 @@
 
 - In your terminal navigate to your projects folder and clone the repo using:
   ```
-	git clone (url link)
+git clone (url link)
 - Check if you have node installed on your machine or not, you can check this by using:
 	```
 	node -v

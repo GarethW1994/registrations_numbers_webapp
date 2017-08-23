@@ -1,5 +1,7 @@
 ## Getting Started:
 
+### Fork and Clone Repository
+
 - First get this repository on your local machine by forking it, to fork this repository click on the fork button in the upper right corner:
 
 ![fork-screenshot](https://user-images.githubusercontent.com/22448019/29610658-33ca45b4-87fb-11e7-8b94-021e343f691d.png)

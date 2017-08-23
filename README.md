@@ -19,7 +19,8 @@
 	```
 	node -v
 	```
-- This should return a version if so, well done you have node installed on your machine ! If this fails you can install node by running the following commands in the terminal (Note that the following is for Debian and Ubuntu based Linux distributions, see: <https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions>)
+- This should return a version if so, well done you have node installed on your machine !
+- If this fails you can install node by running the following commands in the terminal (Note that the following is for Debian and Ubuntu based Linux distributions, see: <https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions>)
   ```
   curl -sL <https://deb.nodesource.com/setup_8.x> | sudo -E bash -
   sudo apt-get install -y nodejs

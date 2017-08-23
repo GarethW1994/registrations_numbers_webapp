@@ -8,7 +8,7 @@
 		</ul>
 </ul>
 
-				![alt text](public/images/logo.png "Description goes here")
+				![alt text](http://www.pontikis.net/blog/media/2013/03/how-to-collaborate-on-github-open-source-projects/post/fork_github_repo_thumb.png "Description goes here")
 
 
 Live Demo: <a href="http://registrations-numbers-webapp.herokuapp.com/">Registrations Web App</a>

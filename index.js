@@ -29,7 +29,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 
 //declare url to mongodb
-const mongoURL = process.env.MONGO_DB_URL || "mongodb://GarethW:$ninja123!@ds137101.mlab.com:37101/reg_numbers";
+const mongoURL = process.env.MONGO_DB_URL || "mongodb://localhost/reg_numbers";
 
 //connect to mongodb
 mongoose.connect(mongoURL);
@@ -42,7 +42,7 @@ var registrationSchema = new mongoose.Schema({
 	}
 });
 
-//declare the unique value 
+//declare the unique value
 registrationSchema.index({registration_number: 1}, {unique: true});
 
 //Create mongoose model
@@ -59,12 +59,12 @@ var filteredRegs = [];
 //Home Route
 app.get('/', function(req, res) {
 registrations.find({}, function(err, data) {
-	
-	if (err) return err;	
-		
-	res.render('home', {data: data, amount: data.length});	
+
+	if (err) return err;
+
+	res.render('home', {data: data, amount: data.length});
 	});
-	
+
 });
 
 
@@ -78,7 +78,7 @@ app.get('/reg_numbers/:reg', function(req, res){
 		if (err) return err;
 
 		console.log(result);
-		
+
 		//msg = "successfully added registration number";
 		res.redirect('/');
 	});
@@ -86,16 +86,16 @@ app.get('/reg_numbers/:reg', function(req, res){
 
 app.get('/filter', function(req, res) {
 	var town = req.query.town
-	
+
 	if (town === 'All') {
 		res.redirect('/');
 	} else {
-		
+
 	registrations.find({registration_number: {$regex : town}}, function(err, data) {
 		if (err) return err;
-		
+
 		//console.log(data);
-		res.render('home', {data: data, amount: data.length});	
+		res.render('home', {data: data, amount: data.length});
 	});
 	}
 });
@@ -104,9 +104,9 @@ app.get('/filter', function(req, res) {
 app.post('/reg_numbers', function(req, res, next) {
 	var reg_number = req.body.regNum;
 	selected_town = req.body.town;
-	
-	if (reg_number !== "") {	
-		res.redirect('/reg_numbers/'+ reg_number);	
+
+	if (reg_number !== "") {
+		res.redirect('/reg_numbers/'+ reg_number);
 	} else {
 		res.redirect('/');
 	}

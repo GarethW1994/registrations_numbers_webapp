@@ -19,6 +19,7 @@
 
 <ul>
 	<li>In your terminal navigate to your projects folder and clone the repo using: <pre>git clone (url link)</pre></li>
+	<li>After the cloning was successful navigate into the repo and run the server using node index.js</li>
 </ul>
 
 Live Demo: <a href="http://registrations-numbers-webapp.herokuapp.com/">Registrations Web App</a>

@@ -19,7 +19,8 @@
 
 <ul>
 	<li>In your terminal navigate to your projects folder and clone the repo using: <pre>git clone (url link)</pre></li>
-	<li>After the cloning was successful navigate into the repo and run the server using node index.js</li>
+	<li>Check if you have node installed on your machine or not, you can check this by using <pre>node -v</pre>, if a version is returned then
+	well done you have node installed on your machine ! If this fails you can install node , </li>
 </ul>
 
 Live Demo: <a href="http://registrations-numbers-webapp.herokuapp.com/">Registrations Web App</a>

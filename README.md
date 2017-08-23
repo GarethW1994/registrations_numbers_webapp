@@ -31,7 +31,8 @@
 - NPM is installed with Nodejs but it's usefull to check if you have the lastest version of npm installed by running the following command in the terminal:
  ```
  npm -v
-	```
+
+ ```
 - This version should be higher than 2.1.8.
 - To update your Node Package Manager run:
 ```

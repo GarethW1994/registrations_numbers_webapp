@@ -1,8 +1,9 @@
 <h1>REGISTRATION NUMBERS WEB-APP</h1>
 
+<h3>Installation Steps:</h3>
 ------------------------------------------
 
-This app allows users to enter any registration that they like. 
+This app allows users to enter any registration that they like.
 
 It also has a filter feature, to filter all the registration numbers entered by users according to town, for example:
 
@@ -26,4 +27,3 @@ If the user selects a town such as Cape Town to filter the above registrations, 
 As seen in the list above the <em>filtered list</em> includes registrations from Cape Town only.
 
 Link To App: <a href="http://registrations-numbers-webapp.herokuapp.com/">Registrations Web App</a>
-

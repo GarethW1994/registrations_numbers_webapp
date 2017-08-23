@@ -6,11 +6,10 @@
 		<ul>
 			<li>To for this repository click on the fork button in the upper right corner:</li>
 			<li>
+		</ul>
+</ul>
 				<p>
 				![alt text](public/images/logo.png "Description goes here")
 				</p>
-			<li>
-		</ul>
-</ul>
 
 Live Demo: <a href="http://registrations-numbers-webapp.herokuapp.com/">Registrations Web App</a>

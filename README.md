@@ -27,7 +27,14 @@
   curl -sL <https://deb.nodesource.com/setup_8.x> | sudo -E bash -
   sudo apt-get install -y nodejs
 	```
-
- 	<p>You at least need <pre>version 4.2.6</pre></p>.
-
+- You at least need <pre>version 4.2.6</pre> test this now by runnin node -v in terminal.
+- NPM is installed with Nodejs but it's usefull to check if you have the lastest version of npm installed by running the following command in the terminal:
+ ```
+ npm -v
+	```
+- This version should be higher than 2.1.8.
+- To update your Node Package Manager run:
+```
+npm install npm@latest -g
+```
   Live Demo: [Registrations Web App](http://registrations-numbers-webapp.herokuapp.com/)

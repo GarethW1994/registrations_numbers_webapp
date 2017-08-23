@@ -25,7 +25,7 @@
   sudo apt-get install -y nodejs
 	```
 
-- You at least need
+ You at least need
   ```
 	version 4.2.6.
 	```

@@ -8,7 +8,7 @@
 		</ul>
 </ul>
 
-				![alt text](public/images/screenshots/logo.png "Description goes here")
+				![alt text](/public/images/screenshots/logo.png "Description goes here")
 
 
 Live Demo: <a href="http://registrations-numbers-webapp.herokuapp.com/">Registrations Web App</a>

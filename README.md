@@ -19,8 +19,8 @@
 
 <ul>
 	<li>In your terminal navigate to your projects folder and clone the repo using: <pre>git clone (url link)</pre></li>
-	<li>Check if you have node installed on your machine or not, you can check this by using <pre>node -v</pre>, if a version is returned then
-	well done you have node installed on your machine ! If this fails you can install node , </li>
+	<li>Check if you have node installed on your machine or not, you can check this by using <pre>node -v</pre></li>
+	<li> This should return a version if so, well done you have node installed on your machine ! If this fails you can install node , </li>
 </ul>
 
 Live Demo: <a href="http://registrations-numbers-webapp.herokuapp.com/">Registrations Web App</a>

@@ -71,7 +71,7 @@ in your paths.
 - Alternatively if you want to install nodemon locally in a directory or path only, you can run the following command `npm install --save-dev nodemon` in your repository:
 
 ##### Usage
-- To run the app in the cloned repository run the following command:
+1. To run the app in the cloned repository run the following command:
 ```
 nodemon index.js
 ```

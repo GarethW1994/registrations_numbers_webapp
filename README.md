@@ -60,7 +60,7 @@
 
 3.  Now in your cloned repository you can run the `mocha` command to be able to run the tests.
 
-See <a href="https://mochajs.org/">Mocha</a>
+See: <a href="https://mochajs.org/">Mocha</a>
 
 ##### Nodemon
 

@@ -1,7 +1,7 @@
 
 ## Getting Started:
 
-  1. You can view this application <a href="http://registrations-numbers-webapp.herokuapp.com/">here</a>.
+  1. You can view this application <a href="http://registrations-numbers-webapp.herokuapp.com/">here</a> or copy this link to your browser `http://registrations-numbers-webapp.herokuapp.com/`.
   2. You will now be able to add your own registration numbers for example: `CA 856 985`
   3. You can also filter on the list of registration numbers by clicking on one of the radio buttons and clicking the filter button:
 

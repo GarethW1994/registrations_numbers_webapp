@@ -11,16 +11,12 @@
 ##  For Developers:
 ### Fork and Clone Repository
 
-- First get this repository on your local machine by forking it, to fork this repository click on the fork button in the upper right corner:
-
-![fork-screenshot](https://user-images.githubusercontent.com/22448019/29610658-33ca45b4-87fb-11e7-8b94-021e343f691d.png)
-
-- Then clone the forked repository from your github account to your local machine.
-- Click on the clone or download button on the forked repository and copy the SSH or HTTPS link to your clipboard.
-
-![clone-screenshot](https://user-images.githubusercontent.com/22448019/29613928-6bc780a0-8808-11e7-9d23-9355a7dbe7eb.png)
-
-- In your terminal navigate to your projects folder and clone the repository using:
+<ol>
+  <li>First get this repository on your local machine by forking it, to fork this repository click on the fork button in the upper right corner.</li>
+  <li>Then clone the forked repository from your github account to your local machine.</li>
+  <li>Click on the clone or download button on the forked repository and copy the SSH or HTTPS link to your clipboard.</li>
+  <li>In your terminal navigate to your projects folder and clone the repository using:</li>
+</ol>
   ```
 	git clone (url link)
 	```

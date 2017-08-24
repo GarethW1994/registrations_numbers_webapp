@@ -20,6 +20,7 @@
   </span></li>
 </ol>
 
+Inline `code` has `back-ticks around` it.
 ### Setting Up Development Environment
 
 ##### You will require the following:

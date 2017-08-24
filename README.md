@@ -33,21 +33,20 @@
 - Nodemon
 
 ##### NodeJS
-1. To check if you have NodeJS installed on your local machine run this command in the terminal:
-  ```
-  node -v
-  ```
-2. If this command fails, install Nodejs on your machine - <a href="">here</a>
+1. To check if you have NodeJS installed on your local machine run this command in the terminal - `node -v`
+
+2. If this command fails, install Nodejs on your machine - <a href="">NodeJS Installation</a>
 
 ##### NPM Install
 1. To install the modules used in this app run the following command in the terminal:
   ```
   npm install
   ```
-2. This will install the node_modules such required and specified in the package.json file within the cloned repository.
+2. This will install the node_modules such required and specified in the `package.json` file within the cloned repository.
 
 ##### MongoDB
-1. Install <a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-mongodb-on-ubuntu-16-04"> MongoDB</a> (Note that this is for ubuntu-16-04    distributions), after mongodb is set up and running the app will save all data in a database called reg_numbers.
+1. Install <a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-mongodb-on-ubuntu-16-04"> MongoDB</a> (Note that this is for ubuntu-16-04    distributions)
+- After mongodb is set up and running the app will save all data in a database called `reg_numbers`.
 
 ##### Mocha
 1. If you want to run some tests  you don't have it, install Mocha by running the following command in the terminal:

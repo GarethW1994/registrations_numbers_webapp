@@ -1,9 +1,15 @@
 
 ## Getting Started:
-##### Live Demo: [Registrations Web App](http://registrations-numbers-webapp.herokuapp.com/)
+- To view and use this application click on this <a href="http://registrations-numbers-webapp.herokuapp.com/">link</a>
+- You will now be able to add your own registration numbers for example:
+  ```
+  CA 856 985
+  ```
+- You can also filter on the list of registration numbers by clicking on one of the radio buttons and clicking the filter button:
 
+![filter-screenshot](https://user-images.githubusercontent.com/22448019/29660429-a025369e-88c1-11e7-8283-6027120a86e2.png)
 
-## Developer Use
+##  For Developers:
 ### Fork and Clone Repository
 
 - First get this repository on your local machine by forking it, to fork this repository click on the fork button in the upper right corner:

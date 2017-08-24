@@ -43,9 +43,9 @@
 - This will install the node_modules such required and specified in the package.json file within the cloned repo.
 ##### MongoDB
 
-- Install MongoDB <a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-mongodb-on-ubuntu-16-04"></a>
+- Install <a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-mongodb-on-ubuntu-16-04"> MongoDB</a>
 
-#### Mocha
+##### Mocha
 - If you want to run some tests  you don't have it, install Mocha by running the following command in the terminal:
   ```
   sudo npm install -g mocha

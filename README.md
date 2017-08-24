@@ -60,6 +60,8 @@
 
 3.  Now in your cloned repository you can run the `mocha` command to be able to run the tests.
 
+See <a href="https://mochajs.org/">Mocha</a>
+
 ##### Nodemon
 
 1. Nodemon will watch files in your directory and if any changes happens nodemon will restart the node application without you having to do it manually.

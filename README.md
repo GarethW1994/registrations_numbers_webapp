@@ -59,7 +59,7 @@
   npm install --save-dev mocha
   ```
 
-1.  Now in your cloned repository you can run the `mocha` command to be able to run the tests.
+3.  Now in your cloned repository you can run the `mocha` command to be able to run the tests.
 
 ##### Nodemon
 

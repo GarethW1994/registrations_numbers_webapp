@@ -64,11 +64,10 @@
 ##### Nodemon
 
 1. Nodemon will watch files in your directory and if any changes happens nodemon will restart the node application without you having to do it manually.
-2. To install Nodemon on your machine, run the following command `npm install nodemon -g` in your terminal. Note that this is a global installation so nodemon can be accessed anywhere
+
+2. To install Nodemon on your machine, run the following command ```npm install nodemon -g``` in your terminal. Note that this is a global installation so nodemon can be accessed anywhere
 in your paths.
-
-
-- Alternatively if you want to install nodemon locally in a directory or path only, you can run the following command `npm install --save-dev nodemon` in your repository:
+-- Alternatively if you want to install nodemon locally in a directory or path only, you can run the following command `npm install --save-dev nodemon` in your repository:
 
 ##### Usage
 1. To run the app in the cloned repository run the following command:

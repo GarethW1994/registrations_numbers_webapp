@@ -75,7 +75,6 @@ npm install --save-dev nodemon
 ```
 
 ##### Usage
-1. To run the app in the cloned repository run the following command:
-```
-nodemon index.js
-```
+1. To run the app in the cloned repository run the following command: `nodemon index.js`
+
+2. The express server will start running and in the terminal you can find on which port the application should be running, in this case, should be at port `3000`

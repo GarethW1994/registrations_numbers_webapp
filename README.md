@@ -1,5 +1,9 @@
-## Getting Started:
 
+## Getting Started:
+##### Live Demo: [Registrations Web App](http://registrations-numbers-webapp.herokuapp.com/)
+
+
+## Developer Use
 ### Fork and Clone Repository
 
 - First get this repository on your local machine by forking it, to fork this repository click on the fork button in the upper right corner:
@@ -17,24 +21,24 @@
 	```
 ### Setting Up Development Environment
 
-- Check if you have node installed on your machine or not, you can check this by using:
-	```
-	node -v
-	```
-- This should return a version if so, well done you have node installed on your machine !
-- Alternatively, install node by running the following commands in the terminal (Note that the following is for Debian and Ubuntu based Linux distributions, see: <https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions>)
+##### You will require the following:
+- Nodejs
+- Expressjs
+- Mongoose
+- MongoDB
+- Mocha
+
+##### NodeJS
+- To check if you have NodeJS installed on your local machine run this command in the terminal:
   ```
-  curl -sL <https://deb.nodesource.com/setup_8.x> | sudo -E bash -
-  sudo apt-get install -y nodejs
-	```
-- Test this now by running node -v in terminal, you at least need <pre>version 4.2.6</pre> .
-- NPM is installed with Nodejs but it's usefull to check if you have the lastest version of npm installed by running the following command in the terminal:
- ```
- npm -v
- ```
-- This version should be higher than 2.1.8.
-- To update your Node Package Manager run:
-```
-npm install npm@latest -g
-```
-  Live Demo: [Registrations Web App](http://registrations-numbers-webapp.herokuapp.com/)
+  node -v
+  ```
+- If this command fails, install Nodejs on your machine if you - <a href="">here</a>
+
+##### ExpressJS
+
+##### Mongoose
+
+##### MongoDB
+
+#### Mocha

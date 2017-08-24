@@ -10,6 +10,8 @@
 
 ![filter-screenshot](https://user-images.githubusercontent.com/22448019/29660429-a025369e-88c1-11e7-8283-6027120a86e2.png)
 
+---
+
 ##  For Developers: Fork and Clone Repository
 
 1. First get this repository on your local machine by forking it, to fork this repository click on the fork button in the upper right corner.

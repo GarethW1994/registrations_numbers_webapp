@@ -33,49 +33,43 @@
 - Nodemon
 
 ##### NodeJS
-- To check if you have NodeJS installed on your local machine run this command in the terminal:
+1. To check if you have NodeJS installed on your local machine run this command in the terminal:
   ```
   node -v
   ```
-- If this command fails, install Nodejs on your machine - <a href="">here</a>
+2. If this command fails, install Nodejs on your machine - <a href="">here</a>
 
 ##### NPM Install
-- To install the modules used in this app run the following command in the terminal:
+1. To install the modules used in this app run the following command in the terminal:
   ```
   npm install
   ```
-- This will install the node_modules such required and specified in the package.json file within the cloned repository.
-##### MongoDB
+2. This will install the node_modules such required and specified in the package.json file within the cloned repository.
 
-- Install <a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-mongodb-on-ubuntu-16-04"> MongoDB</a> (Note that this is for ubuntu-16-04    distributions), after mongodb is set up and running the app will save all data in a database called reg_numbers.
+##### MongoDB
+1. Install <a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-mongodb-on-ubuntu-16-04"> MongoDB</a> (Note that this is for ubuntu-16-04    distributions), after mongodb is set up and running the app will save all data in a database called reg_numbers.
 
 ##### Mocha
-- If you want to run some tests  you don't have it, install Mocha by running the following command in the terminal:
+1. If you want to run some tests  you don't have it, install Mocha by running the following command in the terminal:
   ```
   npm install -g mocha
   ```
-- Alternatively if you want to install mocha locally that it can only be accessed within a certain path, run this command:
+2. Alternatively if you want to install mocha locally that it can only be accessed within a certain path, run this command:
   ```
   npm install --save-dev mocha
   ```
 
--  Now in your cloned repository you can run the command below to run some tests.
-  ```
-  mocha
-  ```
+1.  Now in your cloned repository you can run the `mocha` command to be able to run the tests.
+
 ##### Nodemon
 
-- Nodemon will watch files in your directory and if any changes happens nodemon will restart the node application without you having to do it manually.
-- To install Nodemon on your machine, run the following command in your terminal. Note that this is a global installation so nodemon can be accessed anywhere
+1. Nodemon will watch files in your directory and if any changes happens nodemon will restart the node application without you having to do it manually.
+2. To install Nodemon on your machine, run the following command `npm install nodemon -g` in your terminal. Note that this is a global installation so nodemon can be accessed anywhere
 in your paths.
-```
-npm install nodemon -g
-```
 
-- Alternatively if you want to install nodemon locally in a directory or path only, you can run the following command in your repository:
-```
-  npm install --save-dev nodemon
-```
+
+- Alternatively if you want to install nodemon locally in a directory or path only, you can run the following command `npm install --save-dev nodemon` in your repository:
+
 ##### Usage
 - To run the app in the cloned repository run the following command:
 ```

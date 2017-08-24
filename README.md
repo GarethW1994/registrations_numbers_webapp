@@ -1,5 +1,6 @@
 
 ## Getting Started:
+---
 
   1. You can view this application <a href="http://registrations-numbers-webapp.herokuapp.com/">here</a> or copy this link and paste it in your browser `http://registrations-numbers-webapp.herokuapp.com/`.
 
@@ -12,6 +13,7 @@
 
 ##  For Developers:
 ### Fork and Clone Repository
+---
 
 1. First get this repository on your local machine by forking it, to fork this repository click on the fork button in the upper right corner.
 
@@ -23,7 +25,7 @@
 
 
 ### Setting Up Development Environment
-
+---
 ##### You will require the following:
 - Nodejs
 - Expressjs
@@ -76,7 +78,8 @@ npm install nodemon -g
 npm install --save-dev nodemon
 ```
 
-##### Usage
+##### Running Application
+---
 1. To run the app in the cloned repository run the following command: `nodemon index.js`
 
 2. The express server will start running and in the terminal you can find on which port the application should be running, in this case, should be at port `3000`

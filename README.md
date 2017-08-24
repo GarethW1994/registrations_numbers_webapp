@@ -49,7 +49,7 @@
 - After mongodb is set up and running the app will save all data in a database called `reg_numbers`.
 
 ##### Mocha
-1. If you want to run some tests  you don't have it, install Mocha by running the following command in the terminal:
+1. Install Mocha by running the following command in the terminal:
   ```
   npm install -g mocha
   ```

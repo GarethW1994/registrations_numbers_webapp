@@ -10,12 +10,12 @@
 
 ![fork-screenshot](https://user-images.githubusercontent.com/22448019/29610658-33ca45b4-87fb-11e7-8b94-021e343f691d.png)
 
-- Then clone the forked repo from your github account to your local machine.
-- Click on the clone or download button on the forked repo and copy the SSH or HTTPS link to your clipboard.
+- Then clone the forked repository from your github account to your local machine.
+- Click on the clone or download button on the forked repository and copy the SSH or HTTPS link to your clipboard.
 
 ![clone-screenshot](https://user-images.githubusercontent.com/22448019/29613928-6bc780a0-8808-11e7-9d23-9355a7dbe7eb.png)
 
-- In your terminal navigate to your projects folder and clone the repo using:
+- In your terminal navigate to your projects folder and clone the repository using:
   ```
 	git clone (url link)
 	```
@@ -41,7 +41,7 @@
   ```
   npm install
   ```
-- This will install the node_modules such required and specified in the package.json file within the cloned repo.
+- This will install the node_modules such required and specified in the package.json file within the cloned repository.
 ##### MongoDB
 
 - Install <a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-mongodb-on-ubuntu-16-04"> MongoDB</a> (Note that this is for ubuntu-16-04    distributions), after mongodb is set up and running the app will save all data in a database called reg_numbers.
@@ -51,14 +51,25 @@
   ```
   sudo npm install -g mocha
   ```
--  Now in your cloned repo you can run the command below to run some tests.
+-  Now in your cloned repository you can run the command below to run some tests.
   ```
   mocha
   ```
 ##### Nodemon
 
 - Nodemon will watch files in your directory and if any changes happens nodemon will restart the node application without you having to do it manually.
-- To install Nodemon on your machine, run the following command in your terminal
+- To install Nodemon on your machine, run the following command in your terminal. Note that this is a global installation so nodemon can be accessed anywhere
+in your paths.
 ```
 npm install nodemon -g
+```
+
+- Alternatively if you want to install nodemon locally in a directory or path only, you can run the following command in your repository:
+```
+  npm install --save-dev nodemon
+```
+##### Usage
+- To run the app in the cloned repository run the following command:
+```
+nodemon index.js
 ```

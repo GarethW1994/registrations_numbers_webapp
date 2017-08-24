@@ -21,8 +21,8 @@
 4. In your terminal navigate to your projects folder and clone the repository using: `git clone link`
 
 
----
-### Setting Up Development Environment
+
+## Setting Up Development Environment
 ##### You will require the following:
 - Nodejs
 - Expressjs

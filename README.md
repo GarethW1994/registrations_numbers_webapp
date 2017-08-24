@@ -26,9 +26,11 @@
 
 ## Setting Up Development Environment
 ##### You will require the following:
-- Nodejs
-- Expressjs
+- NodeJS
+- ExpressJS
 - Mongoose
+- Express Handlebars
+- Body Parser
 - MongoDB
 - Mocha
 - Nodemon

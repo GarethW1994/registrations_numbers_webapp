@@ -33,12 +33,24 @@
   ```
   node -v
   ```
-- If this command fails, install Nodejs on your machine if you - <a href="">here</a>
+- If this command fails, install Nodejs on your machine - <a href="">here</a>
 
-##### ExpressJS
-
-##### Mongoose
-
+##### NPM Install
+- To install the modules used in this app run the following command in the terminal:
+  ```
+  npm install
+  ```
+- This will install the node_modules such required and specified in the package.json file within the cloned repo.
 ##### MongoDB
 
+- Install MongoDB <a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-mongodb-on-ubuntu-16-04"></a>
+
 #### Mocha
+- If you want to run some tests  you don't have it, install Mocha by running the following command in the terminal:
+  ```
+  sudo npm install -g mocha
+  ```
+-  Now in your cloned repo you can run the command below to run some tests.
+  ```
+  mocha
+  ```

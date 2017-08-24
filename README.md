@@ -49,8 +49,13 @@
 ##### Mocha
 - If you want to run some tests  you don't have it, install Mocha by running the following command in the terminal:
   ```
-  sudo npm install -g mocha
+  npm install -g mocha
   ```
+- Alternatively if you want to install mocha locally that it can only be accessed within a certain path, run this command:
+  ```
+  npm install --save-dev mocha
+  ```
+
 -  Now in your cloned repository you can run the command below to run some tests.
   ```
   mocha

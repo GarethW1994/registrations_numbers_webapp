@@ -3,10 +3,10 @@ const assert = require('assert');
 const modules = require('../modules');
 const mongoose = require('mongoose');
 //connect to MongoDB
-mongoose.connect('mongodb://localhost/reg_numbers');
+mongoose.connect('mongodb://GarethW:$ninja123!@ds137101.mlab.com:37101/reg_numbers');
 var registrations = modules();
 
-describe('store waiters', function() {
+describe('store registration numbers', function() {
    //before it fuction run clear the Database
     beforeEach(function(done) {
         registrations.find({}, function(err) {
@@ -16,7 +16,7 @@ describe('store waiters', function() {
         });
     });
 
-    it('should add new waiter to MongoDB', function(done) {
+    it('should add new registration number to MongoDB', function(done) {
         var newReg = {registration_number: 'CA 598 698'};
             registrations.create(newReg, function(err) {
                 registrations.find({}, function(err, results){

@@ -3,7 +3,7 @@ const assert = require('assert');
 const modules = require('../modules');
 const mongoose = require('mongoose');
 //connect to MongoDB
-mongoose.connect('mongodb://0.0.0.0/reg_numbers');
+mongoose.connect('mongodb://127.0.0.1/reg_numbers');
 var registrations = modules();
 
 describe('store registration numbers', function() {

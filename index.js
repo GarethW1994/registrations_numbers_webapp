@@ -34,23 +34,8 @@ const mongoURL = process.env.MONGO_DB_URL || "mongodb://localhost/reg_numbers";
 //connect to mongodb
 mongoose.connect(mongoURL);
 
-//Create mongoose Schema
-var registrationSchema = new mongoose.Schema({
-	registration_number: {
-		type: String,
-		require: true
-	}
-});
-
-//declare the unique value
-registrationSchema.index({registration_number: 1}, {unique: true});
-
-//Create mongoose model
-var registrations = mongoose.model('registrations', registrationSchema);
-
-////////////////get data////////////////
-//var getData = require('./public/javascript/mongo-data');
-
+var modules = require('./modules');
+var registrations = modules();
 
 //global variable for storing current selected town
 var selected_town = "";

@@ -17,7 +17,9 @@ describe('store registration numbers', function() {
     });
 
     it('should add new registration number to MongoDB', function(done) {
+        //new registration number
         var newReg = {registration_number: 'CA 598 698'};
+
             registrations.create(newReg, function(err) {
                 registrations.find({}, function(err, results){
                     assert.equal(1, results.length);

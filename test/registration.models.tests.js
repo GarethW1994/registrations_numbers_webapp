@@ -1,10 +1,9 @@
 //require assert
 const assert = require('assert');
 const modules = require('../modules');
-const mongoose = require('mongoose');
+
 //connect to MongoDB
-mongoose.connect('mongodb://127.0.0.1/reg_numbers');
-var registrations = modules();
+var registrations = modules('mongodb://127.0.0.1/reg_numbers');
 
 describe('store registration numbers', function() {
    //before it fuction run clear the Database

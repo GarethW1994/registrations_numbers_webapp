@@ -31,11 +31,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 //declare url to mongodb
 const mongoURL = process.env.MONGO_DB_URL || "mongodb://localhost/reg_numbers";
 
-//connect to mongodb
-mongoose.connect(mongoURL);
-
 var modules = require('./modules');
-var registrations = modules();
+var Models = modules(mongoURL);
 
 //global variable for storing current selected town
 var selected_town = "";
@@ -43,7 +40,7 @@ var filteredRegs = [];
 
 //Home Route
 app.get('/', function(req, res) {
-registrations.find({}, function(err, data) {
+Models.registrations.find({}, function(err, data) {
 
 	if (err) return err;
 
@@ -57,7 +54,7 @@ app.get('/reg_numbers/:reg', function(req, res){
 	var reg_number = req.params.reg;
 	var town = req.params.city;
 
-	registrations({
+	Models.registrations({
 		registration_number: reg_number
 	}).save(function(err, result) {
 		if (err) return err;
@@ -76,7 +73,7 @@ app.get('/filter', function(req, res) {
 		res.redirect('/');
 	} else {
 
-	registrations.find({registration_number: {$regex : town}}, function(err, data) {
+	Models.registrations.find({registration_number: {$regex : town}}, function(err, data) {
 		if (err) return err;
 
 		//console.log(data);

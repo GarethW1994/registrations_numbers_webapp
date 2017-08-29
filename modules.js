@@ -1,7 +1,10 @@
 //require mongoose
 var mongoose = require('mongoose');
 
-module.exports = function() {
+module.exports = function(url) {
+  //connect to mongodb
+  mongoose.connect(url);
+
   const registrationSchema = new mongoose.Schema({
   	registration_number: {
   		type: String,

@@ -40,7 +40,7 @@ var filteredRegs = [];
 
 //Home Route
 app.get('/', function(req, res) {
-Models.registrations.find({}, function(err, data) {
+Models.find({}, function(err, data) {
 
 	if (err) return err;
 
@@ -54,7 +54,7 @@ app.get('/reg_numbers/:reg', function(req, res){
 	var reg_number = req.params.reg;
 	var town = req.params.city;
 
-	Models.registrations({
+	Models({
 		registration_number: reg_number
 	}).save(function(err, result) {
 		if (err) return err;
@@ -73,7 +73,7 @@ app.get('/filter', function(req, res) {
 		res.redirect('/');
 	} else {
 
-	Models.registrations.find({registration_number: {$regex : town}}, function(err, data) {
+	Models.find({registration_number: {$regex : town}}, function(err, data) {
 		if (err) return err;
 
 		//console.log(data);
